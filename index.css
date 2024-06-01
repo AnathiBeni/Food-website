@@ -1,49 +1,80 @@
-.sidenav{
-    height:100x;
-    width:200px;
-    position:fixed;
-    top:0;
-    left:0;
-    background-color: #f8f9fa;
-    padding-top:20px;
+
+    body{background-color: rgb(0, 128, 115);}
+    header{
+        background-color: purple(109, 153, 51) ;
+        width: 100%;
+        height: auto10vh;
+        position:fixed;
+        top: 0;
+    }
+
+
+nav ul{
+    list-style-type:none;
+    text-transform: uppercase;
+    justify-content: space-evenly;
+    display: flex;
+    position: fixed;
+    width: 100%;
+
 }
-.sidenav ul{
-    list-style-type:none;}
-    .sidenav ul li a:hover{
-        background-color: #ddd;
-    }
+nav ul li a{
+    text-decoration: none;
+    color: wheat;
+}
+/*styles for content Area*/
+.container{
+    margin-left: 200px; /* same as side nav width*/
+}
+.content{
+    padding: 20px;
+}
+/*Responsive styles*/
+@media only screen and (max-width:600px){
     .container{
-        margin left: 200px;
+        margin-left: 0;
     }
-    .content{
-        paddind: 20px;
-    }
-    @media only screen and (max-width: 600px) .container { margin-left:0;
-        
-    }
+}
     .sidenav{
-        width:100%
+        width:100%;
         height: auto;
         position: relative;
-
     }
+    /*styles for home section*/
     #home{
         text-align: center;
         padding: 20px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        margin-top: 10rem;
     }
-    #home{
+    #home img {
         max-width:100%;
-        height: auto;
+        height: 50vh;
+        border-radius: 34%;
     }
+    /* styles for ingredients section*/
     #ingredients{
         text-align: center;
+        font-style: oblique;
         padding: 20px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
     }
     #ingredients ul {
-        display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         padding:0;
+        flex-direction: column;
     }
     #ingredients li{
         margin: 10px;
@@ -54,21 +85,23 @@
         max-width: 100px;
         height: auto;
     }
+    /*styles for recipe section*/
     #recipe{
         text-align: center;
         padding: 20px;
     }
     #recipe ol{
-        text-align: left;
+        text-align: center;
         padding-left: 20px ;
     }
     #recipe ol li {
-margin-bottom: 10px;
+        margin-bottom: 10px;
     }
     #recipe ol li img{
         max-width: 100%;
         height: auto;
     }
+    /*styles for feedback section*/
     #feedback{
         text-align: center;
         padding: 20px;
