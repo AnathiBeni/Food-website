@@ -55,9 +55,9 @@ nav ul li a{
         margin-top: 10rem;
     }
     #home img {
-        max-width:100%;
-        height: 50vh;
-        border-radius: 34%;
+        max-width:200%;
+        height: 60vh;
+        border-radius: 30%;
     }
     /* styles for ingredients section*/
     #ingredients{
